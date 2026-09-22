@@ -1,0 +1,13 @@
+div{
+    height: 200rem;
+    width: 100rem;
+}
+button{
+    
+    height:30px;
+    width: 150px;
+    align-items: center;
+}
+table {
+    text-align: center;
+}
