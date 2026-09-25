@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <input id="itemid" type="text">
+    <button onclick="additem()" id="btn">add</button>
+    <ul id="ul"></ul>
+    <script>
+        function additem(){
+            let li = document.createElement("li")
+            if(document.getElementById("itemid").value.trim()==="" ){
+                return 0;
+            }
+            li.innerText=document.querySelector("#itemid").value 
+            document.getElementById("ul").appendChild(li)
+            document.querySelector("#itemid").value=""
+            
+        }
+    </script>
+    
+</body>
+</html>
