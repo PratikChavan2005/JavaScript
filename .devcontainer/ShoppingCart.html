@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,tr,th,td{
+        border: 2px solid black;
+        border-collapse: collapse;
+         height: 50px;
+         
+    }
+    table{
+       
+        width: 50%;
+        
+        
+    }
+    tr,button{
+        margin: 10px 10px;
+        padding: 5px 5px;
+        height: 30px;
+        width: 50%;
+        color: black;
+    }
+    cart , tr{
+        justify-content: center;
+    }
+    
+</style>
+<body>
+    <h1>Shopping Cart</h1>
+    <table>
+        <tr>
+            <th>
+                    Item
+                    
+            </th>
+            <th>
+                Action
+                
+            </th>
+            
+        </tr>
+            <tr>           
+                <td>
+                Chips
+                </td>
+                    <td><button onclick="chipsPlus()" style=background-color:red id="Addchips">AddToCart</button></td>
+                  </tr>  
+            <tr>
+                <td>
+                Soda
+                </td>
+                <td><button onclick="sodaPlus()" style=background-color:red id="Addsoda">AddToCart</button></td>
+             </tr>
+             <tr>
+                 <td>
+                Cookie
+                </td>
+                <td><button onclick="cokiPlus()" style=background-color:red id="addcookie">AddToCart</button></td>
+             </tr>
+           
+        </tr>
+    </table>
+    <h2>Cart</h2>
+        <div id="Cart">
+             <table>
+        <tr>
+            <th>
+                    Item
+                    
+            </th>
+            <th>
+                quintity
+                
+            </th>
+            
+        </tr>
+            <tr >           
+                <td >
+                Chips
+                </td>
+                <td id="chips" >0</td>
+                    
+                  </tr>  
+            <tr>
+                <td >
+                Soda
+                </td>
+                <td id="soda" >0</td>
+                
+             </tr>
+             <tr >
+                 <td >
+                Cookie
+                </td>
+                <td id="coki" >0</td>
+                
+             </tr>
+           
+        </tr>
+    </table>
+        </div>
+    <script>
+            let chipscount=0;
+        function chipsPlus(){
+               chipscount+=1;
+               document.getElementById("chips").innerHTML= `<h6>${chipscount}</h6>`
+        }
+            let sodacount=0;
+        function sodaPlus(){
+               sodacount+=1;
+               document.getElementById("soda").innerHTML= `<h6>${sodacount}</h6>`
+        }
+            let cokicount=0;
+        function cokiPlus(){
+               cokicount+=1;
+               document.getElementById("coki").innerHTML= `<h5>${cokicount}</h5>`
+        }
+    </script>
+</body>
+</html>
