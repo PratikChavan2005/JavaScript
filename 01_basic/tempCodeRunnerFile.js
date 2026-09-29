@@ -1,0 +1,1 @@
+string[len].split("").reverse().join()
