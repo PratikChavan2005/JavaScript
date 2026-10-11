@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Portfolio</title>
+    <a href="link rel="preconnect, href="https://fonts.googleapis.com"></a>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 195px;
+            background-color: rgb(0, 0, 38);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 38px;
+            font-size: 4rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(55, 55, 146);
+            font-size: 4.5rem;
+
+
+        }
+
+        .Text-grey {
+            color: grey;
+            font-size: 2.8rem;
+
+        }
+
+        .left {
+            margin-left: 125px;
+            font-size: 5rem;
+
+        }
+
+        .Firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 150px 0;
+            font-size: 5rem;
+            align-items: center;
+        }
+
+        .leftsection {
+            margin-top: 2%;
+            font-size: 8rem;
+            width: 1500px
+        }
+
+        .rightsection {
+            width: 25%;
+            margin-top: 3%;
+        }
+
+        #element {
+            color: rgb(138, 45, 141);
+        }
+
+        .secondsection {
+            width: 80vw;
+            margin: auto;
+            font-size: 2.5rem;
+            height: 90vh;
+        }
+
+        main hr {
+            border: 0px;
+            background-color: #4a4c8f;
+            height: 8px;
+            margin: 100px 200px;
+        }
+
+        .secondsection .box {
+
+            height: 8px;
+            background: white;
+            margin: 150px 0;
+            width: 80vw;
+
+        }
+        .secondsection .verticle{
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <nav>
+            <div class="left"> Pratik Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+    </head>
+    <main>
+        <section class="Firstsection">
+            <div class="leftsection">
+                <div>Hi, My name is <span style="color: purple;">Pratik</span>.</div>
+                <div>And I am a <span id="element"></span></div>
+            </div>
+
+            <div class="rightsection">
+                <img src="bg.png" alt="Pratik's background image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="Text-grey">What i done so far</span>
+            <h1>
+                Work Experience
+            </h1>
+            <div class="box"></div>
+            <div class="verticle"></div>
+            <div class="verticle"></div>
+            <div class="verticle"></div>
+            <div class="verticle"></div>
+        </section>
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer.', 'MERN stack Developer ', 'Java Developer'],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: false,
+            showCursor: true,
+            cursorChar: '|'
+        });
+    </script>
+
+</body>
+
+</html>
