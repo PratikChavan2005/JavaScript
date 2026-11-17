@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>Even or Odd checker</h1>
+    <input id = "number" type="number">
+    <h4 id="result">Result</h4>
+    <button onclick="checker()">check</button>
+    <script>
+        function checker(){
+            let num = parseFloat(document.getElementById("number").value)
+            let result;
+                if(isNaN(num)){
+                    result="enter number........"
+                }else if (num%2===0){
+                        result="number is even........"
+                } else if(num === 0){
+                    result="number is not odd not even enter grater than zero........."
+                }
+                document.getElementById("result").innerHTML=result;
+        }
+    </script>
+</body>
+</html>
