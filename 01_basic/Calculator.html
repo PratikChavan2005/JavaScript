@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Basic Caculator</h1>
+    <input id="num1" type="number">
+    <input id ="num2"  type="number">
+    <button onclick="calculator('+')" id="add">Add</button>
+    <button onclick="calculator('-')" id="sub">sub</button>
+    <button onclick="calculator('/')" id="devide">devide</button>
+    <button onclick="calculator('*')" id="mul">multiply</button>
+    <h4 id="result">result</h4>
+    <script>
+    function calculator(operator){
+            let a = parseFloat(document.getElementById("num1").value)
+            let b = parseFloat(document.getElementById("num2").value)
+            let result;
+
+            if(isNaN(a) || isNaN(b)){
+                result="please enter both number";
+            }
+            else if (operator === "+"){
+                result = a+b;
+            }
+             else if (operator === "-"){
+                result = a-b;
+            }
+             else if (operator === "*"){
+                result = a*b;
+            }
+             else if (operator === "/"){
+                result = (b===0)?"cannot devide by zero" : a/b;
+            }
+            document.getElementById("result").innerHTML=result;
+    }
+</script>
+</body>
+
+</html>
